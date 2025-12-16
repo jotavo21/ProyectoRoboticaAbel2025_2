@@ -64,10 +64,10 @@ flowchart TD
 ```
 ## Descripción del Gripper
 <p align="center">
-  <img src="./PC.png" width="500">
+  <img src="./PC.png" width="200">
 </p>
 <p align="center">
-  <img src="./PA.png" width="500">
+  <img src="./PA.png" width="200">
 </p>
 
 ## Modelo Robot Studio
