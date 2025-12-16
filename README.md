@@ -192,6 +192,13 @@ Con cada una de estas rutinas propias del codigo RAPID se crearon las funciones 
 
 Para la realización de la interfaz humano-máquina, se debe descargar el SDK del flex pendant para Robot Studio. En el LABSIR, los controladores tienen la versión 15.4 y aunque hay versiones nuevas, si se trabajan con estas versiones, al hacer el Deploy en el controlador físico, habrán errores que no permitan el despliegue, teniendo en cuenta lo anterior, se dará una explicación del proceso llevado a cabo para el diseño y programación de la interfaz.
 
+El programa de ScreenMaker no permite ejecutra funciones del RAPID, pero permite cambiar valores de las variables de tipo PERS, o sea, accesibles desde las entidades externas. De este modo se pueden crear diferentes condicionales que lean estas variables y llamar a las funciones. Siempre se debe tener en cuenta que cualquier cambio que se haga dentro de la ejecución, edita de manera permanente el archivo de RAPID, de modo que no vuelve a restablecerse. 
+
+Para solucionar esto, el equipo de trabajo, opto por mantener en bucle infinito la ejecución del programa y al terminar de hacer una bebida, restablecer las variables a sus valores originales. Todas las variables escritas de tipo PERS son las que se usan en la ejecución de la interfaz, la mayoría son de tipo booleano, aunque hay una en específico que es de tipo num, y permite que el número máximo de botellas seleccionadas sean 3. 
+
+Con la interfaz de ScreenMaker se pueden añadir botones, leds, cuadros de texto, entre otros... En este proyecto sólo se utilizaron los 3 anteriormente nombrados; a cada botón se le asigno un cambio de variable en el Rapid y si era necesario un cambio de pantalla. Además se le añadieron los .PNG a los botones para así darle la apariencia de una botella. 
+
+Esta interfaz permite la manipulación del robot de manera intuitiva y sencilla, sin necesidad de que el operario conozca la programación que hay detrás. Una interfaz pensada para el usuario que quiera modernizar la forma en la que se sirven sus bebidas. 
 
 Revisar código rapid [ Programa RAPID - Module1.mod](./Module1.mod)
 ## Video de Desmostración
