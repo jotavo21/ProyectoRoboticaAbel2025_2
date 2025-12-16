@@ -1,6 +1,6 @@
 # Proyecto Final - Robótica Industrial Automatización del Proceso de "Bartender".
 ## Integrantes
--
+- Juan Esteban Otavo García
 - Ian Saonni Rodríguez Pulido
 - David Felipe Garcia Lopez
 - Nicolas Fernado Davila Peñuela
