@@ -175,9 +175,19 @@ Con cada una de estas rutinas propias del codigo RAPID se crearon las funciones 
 -  Liberación del producto final
 
 ### Código HMI
+<p align="center">
+  <img src=".HMI/Pantalla1.jpg" width="500">
+</p>
+<p align="center">
+  <em>Figura 4. Pantalla de Selección de Botellas</em>
+</p>
 
-![Pantalla de Selección de Botellas](HMI/Pantalla1.jpg)
-![Pantalla Preparación de Bebida](HMI/Pantalla2.jpg)
+<p align="center">
+  <img src=".HMI/Pantalla2.jpg" width="500">
+</p>
+<p align="center">
+  <em>Figura 5. Pantalla Preparación de Bebida</em>
+</p>
 
 
 Para la realización de la interfaz humano-máquina, se debe descargar el SDK del flex pendant para Robot Studio. En el LABSIR, los controladores tienen la versión 15.4 y aunque hay versiones nuevas, si se trabajan con estas versiones, al hacer el Deploy en el controlador físico, habrán errores que no permitan el despliegue, teniendo en cuenta lo anterior, se dará una explicación del proceso llevado a cabo para el diseño y programación de la interfaz.
