@@ -25,43 +25,42 @@ flowchart TD
 
     C --> D{Seleccionaron 3 Ingredientes?}
 
-    D -- No --> E{Selecionar botella no eligida}
+    D -- No --> E[Selecionar botella no eligida]
 
-    E -- Botella 1 --> F[Botella 1]
-    E -- Botella 2 --> G[Botella 2]
-    E -- Botella 3 --> H[Botella 3]
-    E -- Botella 4 --> IBotella 4]
-    E -- Botella 5 --> J[Botella 5]
-    E -- Botella 6 --> K[Botella 6]
+    E ----> F1{Botella 1}
+    E ----> G1{Botella 2}
+    E ----> H1{Botella 3}
+    E ----> I1{Botella 4}
+    E ----> J1{Botella 5}
+    E ----> K1{Botella 6}
 
-    F --> C
-    G --> C
-    H --> C
-    I --> C
-    J --> C
-    K --> C
+    F1 --NO--> F2[Botella 1]
+    G1  --NO--> G2[Botella 2]
+    H1  --NO--> H2[Botella 3]
+    I1  --NO-->I2Botella 4]
+    J1  --NO--> J2[Botella 5]
+    K1  --NO--> K2[Botella 6]
+    F2 --SI--> C
+    G2 --SI--> C
+    H2 --SI--> C
+    I2 --SI--> C
+    J2 --SI--> C
+    K2 --SI--> C
 
-    D -- No --> L{numBotellas == 3<br>y selección terminada?}
 
-    L -- No --> C
+    D -- SI --> L{Iniciar Preparación}
+    L --> M[Ir a Home]
+    M --> N[Mezclar]
+    N --> O[Batir]
+    O --> P[Servir shot]
 
-    L -- Sí --> M[Ir a Home]
-    M --> N[Path_Mezclar]
-    N --> O[Path_Batir]
-    O --> P[Path_Servir_shot]
-
-    P --> Q[Activar banda transportadora<br>6 s]
+    P --> Q[Activar banda transportadora]
     Q --> R[Detener banda]
     R --> S[Ir a Home]
 
-    S --> T[Reiniciar variables<br>de selección]
-    T --> U{reiniciarProceso?}
+    S --> T[Reiniciar selección]
+    T --> C
 
-    U -- Sí --> V[Reset total del sistema<br>numBotellas = 0]
-    V --> W[Ir a Home]
-    W --> C
-
-    U -- No --> C
 ```
 ## Descripción del Gripper
 ## Modelo Robot Studio
