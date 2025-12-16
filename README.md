@@ -63,10 +63,10 @@ flowchart TD
     T --> C
 ```
 ## Descripción del Gripper
-<p align="">
+<p align="center">
   <img src="./PC.png" width="200">
 </p>
-<p align="">
+<p align="center">
   <img src="./PA.png" width="200">
 </p>
 
