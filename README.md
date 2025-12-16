@@ -64,10 +64,10 @@ flowchart TD
 ```
 ## Descripción del Gripper
 <p align="center">
-  <img src="./PC.png" width="70">
+  <img src="./PC.png" width="200">
 </p>
 <p align="center">
-  <img src="./PA.png" width="70">
+  <img src="./PA.png" width="200">
 </p>
 
 El gripper se diseñó en base del pistón disponible en el laboratorio, el pistón abre y cierra gracias al paso de aire a presión por medio de una electroválvula 5/2. El diseño se basa en un mecanismo sencillo, que no usa de manera directa la apertura del pistón, sus eslabones están en diferentes ejes de acción, así se reduce la distancia de apertura pero se multiplica la fuerza de agarre. Sin embargo, no se hizo en base a cálculos matemáticos. Para su diseño. se comenzó por los eslabones, haciendolos gruesos y con dos puntos de agarre diferentes.
