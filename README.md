@@ -87,14 +87,15 @@ Para realizar el codgio de cada una de las rutinas se usaron las siguientes func
 - MoveJ – Movimiento articular, utilizado para cambios rápidos entre posiciones de aproximacion de los distintos objetos 
 - SET activa una salida 
 - RESET desactiva una salida.
-- main
- ├─ Inicializa el sistema (pinza y posición Home)
- ├─ Lee selección de botellas desde la HMI
- ├─ Valida máximo de 3 ingredientes sin repetición
- ├─ Ejecuta Path_BotellaX según selección
- ├─ Inicia preparación cuando hay 3 ingredientes
- ├─ Ejecuta Mezclar → Batir → Servir
- └─ Reinicia variables para un nuevo ciclo
+Con cada una de estas rutinas propias del codigo RAPID se crearon las funciones o subrutinas que definieron el funcionamiento del robot 
+#### main
+- Inicializa el sistema (pinza y posición Home)
+- Lee selección de botellas desde la HMI
+- Valida máximo de 3 ingredientes sin repetición
+- Ejecuta la Selección de Botella
+- Inicia preparación cuando hay 3 ingredientes
+- Ejecuta Mezclar → Batir → Servir
+- Reinicia variables para un nuevo ciclo
 
 Path_Home
  └─ Lleva el robot a una posición segura de referencia
