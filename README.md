@@ -63,6 +63,12 @@ flowchart TD
     T --> C
 ```
 ## Descripción del Gripper
+<p align="center">
+  <img src="ruta/imagen1.png" width="300"/>
+  <img src="ruta/imagen2.png" width="300"/>
+</p>
+
+
 ## Modelo Robot Studio
 La celda robótica fue desarrollada y validada en ABB RobotStudio, donde se modeló el entorno completo de trabajo del robot, incluyendo la disposición de las botellas, el jigger, la coctelera, los utensilios, la banda transportadora y la posición Home. En este entorno se definieron y calibraron los sistemas de coordenadas, herramientas y objetos de trabajo, permitiendo simular con precisión los movimientos del robot y verificar colisiones, alcances y secuencias antes de la ejecución real. El uso de RobotStudio facilitó la integración entre el programa en lenguaje RAPID y el modelo virtual de la celda, asegurando coherencia entre la lógica de control y el comportamiento físico del sistema.La simulación de la celda sera presentada acontinuacion en el video de comprobación
 <p align="center">
