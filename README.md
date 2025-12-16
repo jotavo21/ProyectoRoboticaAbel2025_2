@@ -176,14 +176,14 @@ Con cada una de estas rutinas propias del codigo RAPID se crearon las funciones 
 
 ### Código HMI
 <p align="center">
-  <img src=".HMI/Pantalla1.jpg" width="500">
+  <img src="HMI/Pantalla1.jpg" width="500">
 </p>
 <p align="center">
   <em>Figura 4. Pantalla de Selección de Botellas</em>
 </p>
 
 <p align="center">
-  <img src=".HMI/Pantalla2.jpg" width="500">
+  <img src="HMI/Pantalla2.jpg" width="500">
 </p>
 <p align="center">
   <em>Figura 5. Pantalla Preparación de Bebida</em>
