@@ -8,6 +8,52 @@
 La robótica industrial se ha consolidado como una herramienta fundamental para la automatización de procesos que demandan altos niveles de precisión, repetibilidad y seguridad. En particular, la implementación de sistemas robotizados en tareas tradicionalmente manuales permite mejorar la eficiencia operativa, reducir riesgos asociados a la intervención humana y garantizar una calidad constante en el producto final. En este contexto, la automatización de procesos de preparación de bebidas representa un caso de estudio relevante para la integración de manipuladores industriales, sistemas de control y herramientas especializadas.
 El presente repositorio documenta el desarrollo e implementación de un sistema automatizado tipo bartender utilizando el robot industrial ABB IRB140 "Abel", asignado para la ejecución del proyecto. A lo largo del proyecto se abordaron aspectos clave como el diseño de un gripper multipropósito accionado neumáticamente, la organización del espacio de trabajo, la definición de trayectorias seguras y eficientes para el robot Abel, y la comparación entre el tiempo de alistamiento manual y el proceso automatizado. De esta manera, el proyecto no solo permite aplicar los conceptos vistos en el curso de Robótica Industrial, sino que también evidencia el potencial de los sistemas robotizados en aplicaciones reales de automatización flexible dentro de entornos industriales y de laboratorio.
 ## Descripción de la Solución
+## Diagrama de Flujo
+```mermaid
+flowchart TD
+    A([Inicio del Sistema]) --> B[Reset pinza y mover a Home]
+    B --> C{Bucle infinito}
+
+    C --> D{numBotellas < 3?}
+
+    D -- Sí --> E{Botella seleccionada<br>y no usada antes?}
+
+    E -- Botella 1 --> F[Path_Botella1<br>numBotellas++]
+    E -- Botella 2 --> G[Path_Botella2<br>numBotellas++]
+    E -- Botella 3 --> H[Path_Botella3<br>numBotellas++]
+    E -- Botella 4 --> I[Path_Botella4<br>numBotellas++]
+    E -- Botella 5 --> J[Path_Botella5<br>numBotellas++]
+    E -- Botella 6 --> K[Path_Botella6<br>numBotellas++]
+
+    F --> C
+    G --> C
+    H --> C
+    I --> C
+    J --> C
+    K --> C
+
+    D -- No --> L{numBotellas == 3<br>y selección terminada?}
+
+    L -- No --> C
+
+    L -- Sí --> M[Ir a Home]
+    M --> N[Path_Mezclar]
+    N --> O[Path_Batir]
+    O --> P[Path_Servir_shot]
+
+    P --> Q[Activar banda transportadora<br>6 s]
+    Q --> R[Detener banda]
+    R --> S[Ir a Home]
+
+    S --> T[Reiniciar variables<br>de selección]
+    T --> U{reiniciarProceso?}
+
+    U -- Sí --> V[Reset total del sistema<br>numBotellas = 0]
+    V --> W[Ir a Home]
+    W --> C
+
+    U -- No --> C
+```
 ## Descripción del Gripper
 ## Modelo Robot Studio
 ## Código Rappid
