@@ -167,3 +167,9 @@ Con cada una de estas rutinas propias del codigo RAPID se crearon las funciones 
 ### Código HMI
 Revisar código rapid [ Programa RAPID - Module1.mod](./Module1.mod)
 ## Video de Desmostración
+
+### Simulación de trayectorias
+[![Demo 1](https://img.youtube.com/vi/ItSsxcbrRNU/hqdefault.jpg)](https://www.youtube.com/watch?v=ItSsxcbrRNU)
+
+### Implementación en manipulador ABB IRB 140
+[![Demo 2](https://img.youtube.com/vi/7R1zZbYTsu4/hqdefault.jpg)](https://www.youtube.com/watch?v=7R1zZbYTsu4)
