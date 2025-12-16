@@ -175,6 +175,9 @@ Con cada una de estas rutinas propias del codigo RAPID se crearon las funciones 
 -  Liberación del producto final
 
 ### Código HMI
+Para la realización de la interfaz humano-máquina, se debe descargar el SDK del flex pendant para Robot Studio. En el LABSIR, los controladores tienen la versión 15.4 y aunque hay versiones nuevas, si se trabajan con estas versiones, al hacer el Deploy en el controlador físico, habrán errores que no permitan el despliegue, teniendo en cuenta lo anterior, se dará una explicación del proceso llevado a cabo para el diseño y programación de la interfaz.
+
+
 Revisar código rapid [ Programa RAPID - Module1.mod](./Module1.mod)
 ## Video de Desmostración
 
