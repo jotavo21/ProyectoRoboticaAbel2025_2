@@ -72,14 +72,13 @@ La celda robótica fue desarrollada y validada en ABB RobotStudio, donde se mode
   <em>Figura 1. Celda robótica desarrollada en ABB RobotStudio</em>
 </p>
 <p align="center">
-  <img src="ruta/imagen.png" width="500">
+  <img src="./PlanoSu.png" width="500">
 </p>
 <p align="center">
-  <em>Figura 1. Celda robótica desarrollada en ABB RobotStudio</em>
+  <em>Figura 2. Plano de Planta</em>
 </p>
-![Vista Isometrica de la Celda](./vista.png)
-![Plano de Planta](./PlanoSu.png)
 
+Revisar Proyecto completo de RobotStudio [ Celda Robotizada RobotStudio](./Module1.mod)
 ## Código Rappid
 ### Código de Rutina
 Para realizar el codgio de cada una de las rutinas se usaron las siguientes funciones 
