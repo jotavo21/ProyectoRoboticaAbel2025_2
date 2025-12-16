@@ -11,5 +11,14 @@ El presente repositorio documenta el desarrollo e implementación de un sistema 
 ## Descripción del Gripper
 ## Modelo Robot Studio
 ## Código Rappid
+### Código de Rutina
+Para realizar el codgio de cada una de las rutinas se usaron las siguientes funciones 
+- MoveL – Movimiento lineal cartesiano, para realizar los movimientos que iban de los puntos de aproximacioón a los puntos de agarre de cada objeto 
+- MoveC – Movimiento circular cartesiano, empleado para curvas en la trayectoria de mezclar al usar la cucharilla
+- MoveJ – Movimiento articular, utilizado para cambios rápidos entre posiciones de aproximacion de los distintos objetos 
+- SET activa una salida 
+- RESET desactiva una salida.
+### Código HMI
+Revisar código rapid [ Programa RAPID - Module1.mod](./Module1.mod)
 ## Comparación del tiempo de Alistamiento Manual y Automatizado
 ## Video de Desmostración
