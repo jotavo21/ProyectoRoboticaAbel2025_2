@@ -141,5 +141,4 @@ Con cada una de estas rutinas propias del codigo RAPID se crearon las funciones 
 
 ### Código HMI
 Revisar código rapid [ Programa RAPID - Module1.mod](./Module1.mod)
-## Comparación del tiempo de Alistamiento Manual y Automatizado
 ## Video de Desmostración
