@@ -85,7 +85,7 @@ Revisar Proyecto completo de RobotStudio [ Celda Robotizada RobotStudio](./Modul
 Se utilizaron Smart Components con el fin de aumentar la fidelidad de la simulación respecto a la implementación real del sistema. Mediante estos componentes fue posible simular el comportamiento del gripper, el desplazamiento de elementos dentro del entorno virtual y el movimiento de la copa sobre la banda transportadora.
 
 <p align="center">
-  <img src="./SmartComponent1.png" width="500">
+  <img src="./SmartComponent1.png" width="1000">
 </p>
 <p align="center">
   <em>Figura 3. Esquema de SmartComponent1</em>
