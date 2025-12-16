@@ -21,34 +21,35 @@ El proceso concluye con la colocación del shot en la banda transportadora, la c
 ```mermaid
 flowchart TD
     A([Inicio del Sistema]) --> B[Pinza Abierta]
-    B --> C{Iniciar HMI}
+    B --> C[Iniciar HMI]
 
-    C --> D{Seleccionaron 3 Ingredientes?}
+    C --> D{¿Seleccionaron<br>3 ingredientes?}
 
-    D -- No --> E[Selecionar botella no eligida]
+    D -- No --> E[Seleccionar botella<br>no elegida]
 
-    E ----> F1{Botella 1}
-    E ----> G1{Botella 2}
-    E ----> H1{Botella 3}
-    E ----> I1{Botella 4}
-    E ----> J1{Botella 5}
-    E ----> K1{Botella 6}
+    E --> F1{¿Botella 1?}
+    E --> G1{¿Botella 2?}
+    E --> H1{¿Botella 3?}
+    E --> I1{¿Botella 4?}
+    E --> J1{¿Botella 5?}
+    E --> K1{¿Botella 6?}
 
-    F1 --NO--> F2[Botella 1]
-    G1  --NO--> G2[Botella 2]
-    H1  --NO--> H2[Botella 3]
-    I1  --NO-->I2Botella 4]
-    J1  --NO--> J2[Botella 5]
-    K1  --NO--> K2[Botella 6]
-    F2 --SI--> C
-    G2 --SI--> C
-    H2 --SI--> C
-    I2 --SI--> C
-    J2 --SI--> C
-    K2 --SI--> C
+    F1 -- No --> F2[Ejecutar Path_Botella1]
+    G1 -- No --> G2[Ejecutar Path_Botella2]
+    H1 -- No --> H2[Ejecutar Path_Botella3]
+    I1 -- No --> I2[Ejecutar Path_Botella4]
+    J1 -- No --> J2[Ejecutar Path_Botella5]
+    K1 -- No --> K2[Ejecutar Path_Botella6]
 
+    F2 --> C
+    G2 --> C
+    H2 --> C
+    I2 --> C
+    J2 --> C
+    K2 --> C
 
-    D -- SI --> L{Iniciar Preparación}
+    D -- Sí --> L[Iniciar preparación]
+
     L --> M[Ir a Home]
     M --> N[Mezclar]
     N --> O[Batir]
@@ -60,6 +61,7 @@ flowchart TD
 
     S --> T[Reiniciar selección]
     T --> C
+
 
 ```
 ## Descripción del Gripper
