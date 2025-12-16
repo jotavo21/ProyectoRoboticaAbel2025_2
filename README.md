@@ -84,6 +84,13 @@ Revisar Proyecto completo de RobotStudio [ Celda Robotizada RobotStudio](./Modul
 
 Se utilizaron Smart Components con el fin de aumentar la fidelidad de la simulación respecto a la implementación real del sistema. Mediante estos componentes fue posible simular el comportamiento del gripper, el desplazamiento de elementos dentro del entorno virtual y el movimiento de la copa sobre la banda transportadora.
 
+<p align="center">
+  <img src="./SmartComponent1.png" width="500">
+</p>
+<p align="center">
+  <em>Figura 3. Esquema de SmartComponent1</em>
+</p>
+
 Para la simulación de la apertura y cierre del gripper neumático se emplearon los bloques Hide y Show, los cuales permiten mostrar u ocultar elementos dentro de la simulación. Se utilizaron dos pares de estos bloques junto con dos modelos del gripper (uno en estado abierto y otro en estado cerrado), lo que permite representar visualmente su funcionamiento. Estos bloques se ejecutan a partir de la entrada digital DI_04, asociada al Smart Component, la cual comparte su valor con la salida digital DO_04, utilizada para accionar el gripper en la implementación real. Cuando DO_04 se encuentra en nivel alto, se muestra el modelo del gripper cerrado y, mediante una compuerta lógica NOT, se ejecuta el bloque Hide_2 para ocultar el modelo del gripper abierto. Cuando DO_04 está en nivel bajo, el comportamiento se invierte, mostrando el gripper abierto y ocultando el gripper cerrado.
 
 El desplazamiento de elementos como botellas y recipientes se implementó utilizando los bloques Attacher y Detacher, los cuales permiten unir y separar objetos del gripper durante la simulación. Para determinar qué elemento debe ser unido al gripper, se empleó un LineSensor, encargado de detectar geometrías dentro de un área definida. Cuando se ejecuta el bloque asociado al cierre del gripper, se utiliza la señal Executed para unir o liberar el elemento detectado, simulando así la operación de pick and place. Adicionalmente, se utilizó un segundo par de bloques Attacher y Detacher para unir la tapa a la coctelera durante la trayectoria de batido.
