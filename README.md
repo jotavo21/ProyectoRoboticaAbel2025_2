@@ -72,7 +72,7 @@ flowchart TD
 
 El gripper se diseñó en base del pistón disponible en el laboratorio, el pistón abre y cierra gracias al paso de aire a presión por medio de una electroválvula 5/2
 
-[Aquí todos los planos de las piezas](https://github.com)
+[Aquí todos los planos de las piezas](https://github.com/jotavo21/ProyectoRoboticaAbel2025_2/tree/main/Planos)
 
 
 ## Modelo Robot Studio
