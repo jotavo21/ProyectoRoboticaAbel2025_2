@@ -104,7 +104,7 @@ El desplazamiento de elementos como botellas y recipientes se implementó utiliz
 
 Finalmente, el movimiento de la copa sobre la banda transportadora se simuló mediante un LinearMover, el cual se activa a través de la entrada FWD_Conveyor, vinculada a la salida digital del mismo nombre. Este bloque aplica una velocidad lineal a la copa durante el tiempo en que la señal permanece en nivel alto, reproduciendo el desplazamiento sobre la banda transportadora.
 
-## Código Rappid
+## Código RAPID
 ### Código de Rutina
 Para realizar el codgio de cada una de las rutinas se usaron las siguientes funciones 
 - MoveL – Movimiento lineal cartesiano, para realizar los movimientos que iban de los puntos de aproximacioón a los puntos de agarre de cada objeto 
