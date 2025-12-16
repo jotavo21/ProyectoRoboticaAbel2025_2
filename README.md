@@ -78,7 +78,7 @@ La celda robótica fue desarrollada y validada en ABB RobotStudio, donde se mode
   <em>Figura 2. Plano de Planta</em>
 </p>
 
-Revisar Proyecto completo de RobotStudio [ Celda Robotizada RobotStudio](./Module1.mod)
+Revisar Proyecto completo de RobotStudio [ Celda Robotizada RobotStudio](./ProyectoRoboticaBartenderABB.rspag)
 
 ## Implementación de SmartComponents para simulación
 
