@@ -34,19 +34,19 @@ flowchart TD
     E --> J1{¿Botella 5?}
     E --> K1{¿Botella 6?}
 
-    F1 -- No --> F2[Ejecutar Path_Botella1]
-    G1 -- No --> G2[Ejecutar Path_Botella2]
-    H1 -- No --> H2[Ejecutar Path_Botella3]
-    I1 -- No --> I2[Ejecutar Path_Botella4]
-    J1 -- No --> J2[Ejecutar Path_Botella5]
-    K1 -- No --> K2[Ejecutar Path_Botella6]
+    F1 -- No --> F2[Servir Botella 1]
+    G1 -- No --> G2[Servir Botella 2]
+    H1 -- No --> H2[Servir Botella 3]
+    I1 -- No --> I2[Servir Botella 4]
+    J1 -- No --> J2[Servir Botella 5]
+    K1 -- No --> K2[Servir Botella 6]
 
-    F2 --> C
-    G2 --> C
-    H2 --> C
-    I2 --> C
-    J2 --> C
-    K2 --> C
+    F2 --> D
+    G2 --> D
+    H2 --> D
+    I2 --> D
+    J2 --> D
+    K2 --> D
 
     D -- Sí --> L[Iniciar preparación]
 
