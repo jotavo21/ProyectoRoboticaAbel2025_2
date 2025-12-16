@@ -87,6 +87,57 @@ Para realizar el codgio de cada una de las rutinas se usaron las siguientes func
 - MoveJ – Movimiento articular, utilizado para cambios rápidos entre posiciones de aproximacion de los distintos objetos 
 - SET activa una salida 
 - RESET desactiva una salida.
+- main
+ ├─ Inicializa el sistema (pinza y posición Home)
+ ├─ Lee selección de botellas desde la HMI
+ ├─ Valida máximo de 3 ingredientes sin repetición
+ ├─ Ejecuta Path_BotellaX según selección
+ ├─ Inicia preparación cuando hay 3 ingredientes
+ ├─ Ejecuta Mezclar → Batir → Servir
+ └─ Reinicia variables para un nuevo ciclo
+
+Path_Home
+ └─ Lleva el robot a una posición segura de referencia
+
+Path_Botella1 – Path_Botella6
+ ├─ Desplazamiento a la botella seleccionada
+ ├─ Toma la botella con la pinza
+ ├─ Llamada a Path_Verter (dosificación)
+ ├─ Retorno de la botella a su posición
+ └─ Llamada a Path_JigerCoct
+
+Path_Verter
+ ├─ Posicionamiento sobre el jigger
+ ├─ Movimiento de vertido controlado
+ └─ Retorno a posición segura
+
+Path_JigerCoct
+ ├─ Toma del jigger
+ ├─ Vertido del contenido en la coctelera
+ └─ Retorno del jigger a su posición
+
+Path_Mezclar
+ ├─ Toma de la cucharilla
+ ├─ Movimiento circular de mezcla
+ └─ Retorno de la herramienta
+
+Path_Batir
+ ├─ Colocación de tapa en la coctelera
+ ├─ Secuencia de batido (movimientos repetitivos)
+ ├─ Retiro de la tapa
+ └─ Vertido del contenido en el shot
+
+Path_PonerTapa
+ └─ Coloca la tapa sobre la coctelera
+
+Path_QuitarTapa
+ └─ Retira la tapa de la coctelera
+
+Path_Servir_shot
+ ├─ Toma del shot
+ ├─ Colocación en banda transportadora
+ └─ Liberación del producto final
+
 ### Código HMI
 Revisar código rapid [ Programa RAPID - Module1.mod](./Module1.mod)
 ## Comparación del tiempo de Alistamiento Manual y Automatizado
