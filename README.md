@@ -64,8 +64,8 @@ flowchart TD
 ```
 ## Descripción del Gripper
 <p align="center">
-  <img src="ruta/imagen1.png" width="300"/>
-  <img src="ruta/imagen2.png" width="300"/>
+  <img src="ruta/PA.PNG" width="300"/>
+  <img src="ruta/PC.png" width="300"/>
 </p>
 
 
