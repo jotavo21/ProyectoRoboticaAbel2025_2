@@ -1,4 +1,4 @@
-# Proyecto Final - Robótica Industrial Automatización del Proceso de "Bartender".
+**# Proyecto Final - Robótica Industrial Automatización del Proceso de "Bartender".
 ## Integrantes
 - Juan Esteban Otavo García
 - Ian Saonni Rodríguez Pulido
@@ -70,7 +70,12 @@ flowchart TD
   <img src="./PA.png" width="70">
 </p>
 
-El gripper se diseñó en base del pistón disponible en el laboratorio, el pistón abre y cierra gracias al paso de aire a presión por medio de una electroválvula 5/2
+El gripper se diseñó en base del pistón disponible en el laboratorio, el pistón abre y cierra gracias al paso de aire a presión por medio de una electroválvula 5/2. El diseño se basa en un mecanismo sencillo, que no usa de manera directa la apertura del pistón, sus eslabones están en diferentes ejes de acción, así se reduce la distancia de apertura pero se multiplica la fuerza de agarre. Sin embargo, no se hizo en base a cálculos matemáticos. Para su diseño. se comenzó por los eslabones, haciendolos gruesos y con dos puntos de agarre diferentes.
+El primer punto se encuentra en la punta del eslabón, donde ambas caras de los eslabones se encuentran con una diferencia muy pequeña.El otro punto está en el medio del eslabón, este tiene forma circular y permite el agarre de objetos cilíndricos como los necesarios en el proyecto. 
+
+Luego de tener los eslabones, se abren los pistones y se calcula la distancia entre los ejes del eslabon y de las pinzas del pistón. Así se obtienen las distancias necesarias para hacer la pieza llamada "unión" que también es en forma circular para evitar las colisiones con los otros puntos del pistón. 
+
+La pieza llamada placa es la encargada de unir Los eslabones y uniones con el piston, se hizo intencionalmente con un espacio en la mitad, y así permitir la manipulación de los tornillos. Y por último la base abb, permite conectar el pistón con el flange del robot ABB que tiene un desfase de 15 grados para evitar el Lock Gimball. 
 
 [Aquí todos los planos de las piezas](https://github.com/jotavo21/ProyectoRoboticaAbel2025_2/tree/main/Planos)
 
@@ -180,3 +185,4 @@ Revisar código rapid [ Programa RAPID - Module1.mod](./Module1.mod)
 ### Implementación en manipulador ABB IRB 140
 
 [![Demo 1](https://img.youtube.com/vi/ItSsxcbrRNU/hqdefault.jpg)](https://www.youtube.com/watch?v=ItSsxcbrRNU)
+******
